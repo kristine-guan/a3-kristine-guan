@@ -21,7 +21,7 @@ const submit = async function( event ) {
 
 
   const response = await fetch( '/submit', {
-      
+      headers: {"Content-Type": "application/json"},
     method:'POST',
     body  
   }).then( async function (response){
